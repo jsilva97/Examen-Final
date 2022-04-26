@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ESPN Suite" verbose="1" parallel="false">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"></parameter>
+    <parameter name="user" value="jfelipetest97@gmail.com"></parameter>
+    <parameter name="password" value="pYqJz5E*F4%@n*"></parameter>
+    <test preserve-order="true" name="Log In Test">
+        <classes>
+            <class name="com.globant.tests.LogInTest">
+            </class>
+        </classes>
+    </test>
+    <test preserve-order="true" name="Log Out Test">
+        <classes>
+            <class name="com.globant.tests.LogOutTest">
+            </class>
+        </classes>
+    </test>
+    <test preserve-order="true" name="Delete Account Test">
+        <classes>
+            <class name="com.globant.tests.DeleteAccountTest">
+            </class>
+        </classes>
+    </test>
+</suite>
